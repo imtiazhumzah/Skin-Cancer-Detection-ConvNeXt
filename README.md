@@ -28,6 +28,28 @@ The integration of Grad-CAM ensures the model focuses on clinically relevant mor
 ![Melanoma Grad-CAM Visualization](assets/grad-cam-sample.PNG)
 ![Melanoma Grad-CAM Visualization](assets/grad-cam-2.PNG)
 
+## Explainability (XAI) & Clinical Validation
+To ensure diagnostic transparency, we utilize **Guided Grad-CAM** to visualize the model's decision-making process.
+
+<p align="center">
+  <img src="assets/grad-cam-sample.PNG" width="400" />
+  <img src="assets/grad-cam-2.PNG" width="400" /> 
+  <br>
+  <em>Figure 1: Grad-CAM heatmaps showing high activation on clinically relevant pigment networks.</em>
+</p>
+
+### Performance Analysis
+Our evaluation focused on the trade-off between raw accuracy and clinical safety (Recall). 
+
+![Validation Accuracy Curves](assets/val-acc.png)
+![Clinical Evaluation Report](assets/clinical-report.png)
+
+> **Note:** The high recall for Melanoma (90+%) ensures that the model acts as an effective safety net in a clinical triage setting.
+
+### 📱 Live Application Preview
+The model is deployed via a Gradio interface on Hugging Face Spaces, allowing for real-time inference and XAI visualization.
+
+![App Interface Sample](assets/app-sample.png)
 ## Ethics & Privacy
 * **Bias Awareness:** Performance was validated on the HAM10000 dataset; results may vary across diverse Fitzpatrick skin scales.
 * **Data Minimization:** This system is stateless; user uploads are processed in-memory and never stored.
