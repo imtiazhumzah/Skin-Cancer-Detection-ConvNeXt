@@ -36,14 +36,14 @@ To ensure diagnostic transparency, we utilize **Guided Grad-CAM** to visualize t
 Our evaluation focused on the trade-off between raw accuracy and clinical safety (Recall). 
 
 ![Validation Accuracy Curves](assets/val-acc.PNG)
-![Clinical Evaluation Report](assets/clinical-report.PNG)
+![Clinical Evaluation Report](assets/clinical-eval-report.PNG)
 
 > **Note:** The high recall for Melanoma (90+%) ensures that the model acts as an effective safety net in a clinical triage setting.
 
 ### 📱 Live Application Preview
 The model is deployed via a Gradio interface on Hugging Face Spaces, allowing for real-time inference and XAI visualization.
 
-![App Interface Sample](assets/app-sample.png)
+![App Interface Sample](assets/app-sample.PNG)
 ## Ethics & Privacy
 * **Bias Awareness:** Performance was validated on the HAM10000 dataset; results may vary across diverse Fitzpatrick skin scales.
 * **Data Minimization:** This system is stateless; user uploads are processed in-memory and never stored.
