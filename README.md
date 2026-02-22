@@ -25,8 +25,8 @@ To develop a robust, physician-aligned classification system for skin lesions. T
 ## Explainability (XAI)
 
 The integration of Grad-CAM ensures the model focuses on clinically relevant morphology (irregular borders, pigment networks) rather than background artifacts like hair or skin markers.
-![Melanoma Grad-CAM Visualization](assets/grad-cam sample.png)
-![Melanoma Grad-CAM Visualization](assets/grad-cam 2.png)
+![Melanoma Grad-CAM Visualization](assets/grad-cam sample.PNG)
+![Melanoma Grad-CAM Visualization](assets/grad-cam 2.PNG)
 
 ## Ethics & Privacy
 * **Bias Awareness:** Performance was validated on the HAM10000 dataset; results may vary across diverse Fitzpatrick skin scales.
