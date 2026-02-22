@@ -22,12 +22,6 @@ To develop a robust, physician-aligned classification system for skin lesions. T
 | **Melanoma Sensitivity** | **94.10%** | **90.00%** | **Safety:** Specifically minimizes missed cancers. |
 | **Macro F1-Score** | **0.92** | **0.71** | Balanced performance on imbalanced data. |
 
-## Explainability (XAI)
-
-The integration of Grad-CAM ensures the model focuses on clinically relevant morphology (irregular borders, pigment networks) rather than background artifacts like hair or skin markers.
-![Melanoma Grad-CAM Visualization](assets/grad-cam-sample.PNG)
-![Melanoma Grad-CAM Visualization](assets/grad-cam-2.PNG)
-
 ## Explainability (XAI) & Clinical Validation
 To ensure diagnostic transparency, we utilize **Guided Grad-CAM** to visualize the model's decision-making process.
 
@@ -41,8 +35,8 @@ To ensure diagnostic transparency, we utilize **Guided Grad-CAM** to visualize t
 ### Performance Analysis
 Our evaluation focused on the trade-off between raw accuracy and clinical safety (Recall). 
 
-![Validation Accuracy Curves](assets/val-acc.png)
-![Clinical Evaluation Report](assets/clinical-report.png)
+![Validation Accuracy Curves](assets/val-acc.PNG)
+![Clinical Evaluation Report](assets/clinical-report.PNG)
 
 > **Note:** The high recall for Melanoma (90+%) ensures that the model acts as an effective safety net in a clinical triage setting.
 
